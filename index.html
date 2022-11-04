@@ -11,7 +11,7 @@ function startTime() {
   let h = today.getUTCHours();
   let m = today.getUTCMinutes();
   m = checkTime(m);
-  document.getElementById('txt').innerHTML = "<br />" + h + ":" + m + "<br />" + " UTC";
+  document.getElementById('txt').innerHTML = "<br />" + h + ":" + m + " UTC";
   setTimeout(startTime, 1000);
 }
 
