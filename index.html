@@ -8,8 +8,8 @@
 <script>
 function startTime() {
   const today = new Date();
-  let h = today.getHours();
-  let m = today.getMinutes();
+  let h = today.getUTCHours();
+  let m = today.getUTCMinutes();
   m = checkTime(m);
   document.getElementById('txt').innerHTML =  h + ":" + m;
   setTimeout(startTime, 1000);
