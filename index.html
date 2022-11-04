@@ -10,8 +10,9 @@ function startTime() {
   var today = new Date();
   let h = today.getUTCHours();
   let m = today.getUTCMinutes();
+  let word = " UTC";
   m = checkTime(m);
-  document.getElementById('txt').innerHTML = "<br/>" + h + ":" + m + "UTC";
+  document.getElementById('txt').innerHTML = "<br/>" + h + ":" + m + '<span style="color: #FFD700;">' + word + '</span>';
   setTimeout(startTime, 1000);
 }
 
