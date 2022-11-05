@@ -12,6 +12,7 @@ function startTime() {
   let m = today.getUTCMinutes();
   let word = " UTC";
   m = checkTime(m);
+  h = checkTime(h);
   document.getElementById('txt').innerHTML = "<br/>" + h + ":" + m + '<span style="color: #FFD700;">' + word + '</span>';
   setTimeout(startTime, 1000);
 }
