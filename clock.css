@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'clipregular';
-    src: url('clip-webfont.woff2') format('woff2'),
-         url('clip-webfont.woff') format('woff');
+    font-family: 'courianewbold';
+    src: url('courbd-webfont.woff2') format('woff2'),
+         url('courbd-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 .myText {
   font-size: 120px;
-  font-family: 'clipregular';
+  font-family: 'courianewbold';
   color: white;
   display: inline-block;
   border-radius: 5px;
