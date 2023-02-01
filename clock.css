@@ -17,6 +17,7 @@
   text-align: center;
   line-height: 0.8;
   letter-spacing: -4px;
+  -webkit-text-stroke: 3px black;
 }
 
 @keyframes blink {
