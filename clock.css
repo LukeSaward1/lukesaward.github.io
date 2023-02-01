@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'courianewbold';
-    src: url('courbd-webfont.woff2') format('woff2'),
-         url('courbd-webfont.woff') format('woff');
-    font-weight: normal;
+    src: url('consolab-webfont.woff2') format('woff2'),
+         url('consolab-webfont.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -16,8 +16,9 @@
   background-color: rgba(0, 0, 0, 0);
   text-align: center;
   line-height: 0.8;
-  letter-spacing: -4px;
+  letter-spacing: -7px;
   -webkit-text-stroke: 4px black;
+  font-weight: bold;
 }
 
 @keyframes blink {
