@@ -2,9 +2,7 @@
 <html>
 <link rel="stylesheet" href="clock.css">
 <body onload="startTime()">
-
 <div class="myText" id="txt"></div>
-
 <script>
 function startTime() {
   var today = new Date();
@@ -22,7 +20,7 @@ function startTime() {
   let word = " UTC";
   m = checkTime(m);
   h = checkTime(h);
-  document.getElementById('txt').innerHTML = "<br/>" + h + '<span class="blink">:</span>' + m + '<span style="color: #FFD700;">' + word + '</span>';
+  document.getElementById('txt').innerHTML = "<br/>" + h + '<span class="blink">:</span>' + m + '<span style="color: #FE007DFE007D;">' + word + '</span>';
   setTimeout(startTime, 1000);
 }
 
@@ -31,6 +29,5 @@ function checkTime(i) {
   return i;
 }
 </script>
-
 </body>
 </html>
