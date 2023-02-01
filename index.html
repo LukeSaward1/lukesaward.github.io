@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="clock.css">
 <body onload="startTime()">
@@ -20,7 +20,7 @@ function startTime() {
   let word = " UTC";
   m = checkTime(m);
   h = checkTime(h);
-  document.getElementById('txt').innerHTML = "<br/>" + h + '<span class="blink">:</span>' + m + '<span style="color: #FE007DFE007D;">' + word + '</span>';
+  document.getElementById('txt').innerHTML = "<br/>" + h + '<span class="blink">:</span>' + m + '<span style="color: #FE007D;">' + word + '</span>';
   setTimeout(startTime, 1000);
 }
 
