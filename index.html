@@ -20,7 +20,7 @@ function startTime() {
   let word = " UTC";
   m = checkTime(m);
   h = checkTime(h);
-  document.getElementById('txt').innerHTML = "<br/>" + today.toUTCString();
+  document.getElementById('txt').innerHTML = "<br/>" + today.toISOString();
   // document.getElementById('txt').innerHTML = "<br/>" + h + '<span class="blink">:</span>' + m + '<span style="color: #FE007D;">' + word + '</span>';
   setTimeout(startTime, 1000);
 }
