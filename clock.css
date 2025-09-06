@@ -7,7 +7,7 @@
 }
 
 .myText {
-  font-size: 240px;
+  font-size: 120px;
   font-family: 'courianewbold';
   color: white;
   display: inline-block;
@@ -17,7 +17,7 @@
   text-align: center;
   line-height: 0.8;
   letter-spacing: -7px;
-  -webkit-text-stroke: 8px black;
+  -webkit-text-stroke: 4px black;
   font-weight: bold;
 }
 
