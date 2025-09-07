@@ -6,21 +6,25 @@
 <script>
 function startTime() {
   var today = new Date();
-  let h = today.getUTCHours();
-  let m = today.getUTCMinutes();
-  let sep = ":"
-  var blinkOn = blinkOn;
-  if (blinkOn == true)
-  {
-	  sep = " ";
-  }
-  else {
-	  sep = ":";
-  }
-  let word = " UTC";
-  m = checkTime(m);
-  h = checkTime(h);
-  document.getElementById('txt').innerHTML = "<br/>" + today.toISOString();
+  var currentDate = ("0" + today.getUTCDate()).slice(-2);
+  var month = today.getMonth() + 1;
+  var currentMonth = ("0" + month).slice(-2);
+  var currentHours = ("0" + today.getHours()).slice(-2);
+  var currentMinutes = ("0" + today.getMinutes()).slice(-2);
+  var currentSeconds = ("0" + today.getSeconds()).slice(-2);
+  // let sep = ":"
+  // var blinkOn = blinkOn;
+  // if (blinkOn == true)
+  // {
+	 //  sep = " ";
+  // }
+  // else {
+	 //  sep = ":";
+  // }
+  // let word = " UTC";
+  // m = checkTime(m);
+  // h = checkTime(h);
+  document.getElementById('txt').innerHTML = "<br/>" + currentMonth + "/" + currentDate + "/" + today.getFullYear() + " " + currentHours + ":" + currentMinutes + ":" + currentSeconds;
   // document.getElementById('txt').innerHTML = "<br/>" + h + '<span class="blink">:</span>' + m + '<span style="color: #FE007D;">' + word + '</span>';
   setTimeout(startTime, 1000);
 }
