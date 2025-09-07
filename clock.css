@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'courianewbold';
-    src: url('consolab-webfont.woff2') format('woff2'),
-         url('consolab-webfont.woff') format('woff');
+    src: url('Consolas.woff2') format('woff2'),
+         url('Consolas.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
